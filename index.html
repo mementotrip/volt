@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOLT — Комплектующие для ПК</title>
+    
+    <!-- Подключение шрифтов Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Шапка магазина (Store Header) -->
+    <header class="store-header">
+        
+        <!-- Баннер анонсов (Announcement) -->
+        <div class="announcement">
+            <span class="shipping-promise">Бесплатная экспресс-доставка при заказе от $500 • Доставка день в день</span>
+            <div class="utility-links">
+                <a href="#" class="utility-link">Поддержка 24/7</a>
+                <a href="#" class="utility-link">Регион: US ($)</a>
+            </div>
+        </div>
+
+        <!-- Главная навигация (Main navigation) -->
+        <div class="main-navigation">
+            
+            <!-- Бренд (Brand) -->
+            <a href="#" class="brand">
+                <div class="zap-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#527BFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                    </svg>
+                </div>
+                <span class="wordmark">VOLT</span>
+                <span class="brand-descriptor">HARDWARE</span>
+            </a>
+
+            <!-- Поиск (Search) -->
+            <div class="search-bar">
+                <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="#969EAF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <input type="text" class="search-input" placeholder="Поиск видеокарт, процессоров, систем охлаждения..." readonly>
+                <kbd class="shortcut">⌘K</kbd>
+                <div class="search-divider"></div>
+                <svg class="filter-icon" viewBox="0 0 24 24" fill="none" stroke="#969EAF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="4" y1="21" x2="4" y2="14"></line>
+                    <line x1="4" y1="10" x2="4" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="12"></line>
+                    <line x1="12" y1="8" x2="12" y2="3"></line>
+                    <line x1="20" y1="21" x2="20" y2="16"></line>
+                    <line x1="20" y1="12" x2="20" y2="3"></line>
+                    <line x1="1" y1="14" x2="7" y2="14"></line>
+                    <line x1="9" y1="8" x2="15" y2="8"></line>
+                    <line x1="17" y1="16" x2="23" y2="16"></line>
+                </svg>
+            </div>
+
+            <!-- Действия аккаунта (Account actions) -->
+            <div class="account-actions">
+                <a href="#" class="action-btn" aria-label="Избранное">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#F5F7FC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    </svg>
+                </a>
+                <a href="#" class="action-btn cart-btn" aria-label="Корзина">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#F5F7FC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                    <span class="cart-count">2</span>
+                </a>
+                <a href="#" class="action-btn" aria-label="Профиль">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#F5F7FC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- Навигация по категориям (Category navigation) -->
+        <nav class="category-navigation">
+            <div class="category-menu">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#527BFF" stroke-width="2">
+                    <rect x="3" y="3" width="7" height="7"></rect>
+                    <rect x="14" y="3" width="7" height="7"></rect>
+                    <rect x="14" y="14" width="7" height="7"></rect>
+                    <rect x="3" y="14" width="7" height="7"></rect>
+                </svg>
+                <span class="menu-label">Каталог</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#969EAF" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+            </div>
+            
+            <div class="nav-divider"></div>
+
+            <a href="#" class="nav-link">Новинки</a>
+            <a href="#" class="nav-link">Готовые ПК</a>
+            <a href="#" class="nav-link">Конфигуратор</a>
+            <a href="#" class="nav-link">Скидки</a>
+            <a href="#" class="nav-link highlight">PRO Zone</a>
+
+            <div class="header-promise">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#73D8AC" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    <polyline points="9 12 11 14 15 10"></polyline>
+                </svg>
+                <span>Официальная гарантия и сертификация</span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Главный баннер (Flagship launch) -->
+    <section class="hero-section">
+        <!-- Текстурный фон / Градиентный фильтр -->
+        <div class="hero-bg-image"></div>
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <div class="launch-label">
+                <span class="launch-indicator"></span>
+                <span class="eyebrow">МИРОВАЯ ПРЕМЬЕРА</span>
+            </div>
+            <h1 class="headline">NVIDIA GeForce RTX 5080</h1>
+            <p class="supporting-copy">
+                Архитектура нового поколения. Невероятная производительность в трассировке лучей и алгоритмах ИИ для бескомпромиссного 4K-гейминга.
+            </p>
+            <div class="hero-actions">
+                <a href="#" class="btn btn-primary">
+                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#F5F7FC" stroke-width="2">
+                        <line x1="7" y1="17" x2="17" y2="7"></line>
+                        <polyline points="7 7 17 7 17 17"></polyline>
+                    </svg>
+                    <span>Купить сейчас</span>
+                </a>
+                <a href="#" class="btn btn-secondary">
+                    <span>Характеристики</span>
+                </a>
+            </div>
+            
+            <div class="slide-pagination">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+
+        <div class="featured-callout">
+            <span class="model">RTX 5080 FE</span>
+            <span class="starting-price">Старт продаж от $999</span>
+        </div>
+    </section>
+
+    <!-- Преимущества магазина (Store assurances) -->
+    <section class="store-assurances">
+        <div class="assurance-item">
+            <svg class="assurance-icon" viewBox="0 0 24 24" fill="none" stroke="#527BFF" stroke-width="2">
+                <rect x="1" y="3" width="15" height="13"></rect>
+                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                <circle cx="18.5" cy="18.5" r="2.5"></circle>
+            </svg>
+            <div class="assurance-copy">
+                <h4 class="title">Быстрая доставка</h4>
+                <p class="description">Отправка в день заказа</p>
+            </div>
+        </div>
+
+        <div class="assurance-item">
+            <svg class="assurance-icon" viewBox="0 0 24 24" fill="none" stroke="#527BFF" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <polyline points="9 12 11 14 15 10"></polyline>
+            </svg>
+            <div class="assurance-copy">
+                <h4 class="title">Гарантия качества</h4>
+                <p class="description">3 года официальной гарантии</p>
+            </div>
+        </div>
+
+        <div class="assurance-item">
+            <svg class="assurance-icon" viewBox="0 0 24 24" fill="none" stroke="#527BFF" stroke-width="2">
+                <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
+                <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path>
+            </svg>
+            <div class="assurance-copy">
+                <h4 class="title">Экспертная поддержка</h4>
+                <p class="description">Помощь в подборе 24/7</p>
+            </div>
+        </div>
+
+        <div class="assurance-item">
+            <svg class="assurance-icon" viewBox="0 0 24 24" fill="none" stroke="#527BFF" stroke-width="2">
+                <polyline points="16 16 12 12 8 16"></polyline>
+                <line x1="12" y1="12" x2="12" y2="21"></line>
+                <path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"></path>
+            </svg>
+            <div class="assurance-copy">
+                <h4 class="title">Легкий возврат</h4>
+                <p class="description">30 дней на размышление</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Сетка категорий (Shop by component) -->
+    <section class="shop-by-component">
+        <div class="section-heading">
+            <div class="heading-title">
+                <span class="eyebrow">// КОМПЛЕКТУЮЩИЕ</span>
+                <h2 class="title">Соберите ПК своей мечты</h2>
+            </div>
+            <a href="#" class="section-link">
+                <span class="label">Все категории товаров</span>
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#527BFF" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+            </a>
+        </div>
+
+        <div class="category-grid">
+            
+            <!-- Карточка 1 -->
+            <a href="#" class="category-card">
+                <div class="card-image cpu-bg"></div>
+                <span class="category-name">Процессоры</span>
+                <span class="product-count">124 ТОВАРА</span>
+            </a>
+
+            <!-- Карточка 2 (Активная/Выделенная) -->
+            <a href="#" class="category-card active">
+                <div class="card-image gpu-bg"></div>
+                <span class="category-name">Видеокарты</span>
+                <span class="product-count">86 ТОВАРОВ</span>
+            </a>
+
+            <!-- Карточка 3 -->
+            <a href="#" class="category-card">
+                <div class="card-image mobo-bg"></div>
+                <span class="category-name">Материнские платы</span>
+                <span class="product-count">142 ТОВАРА</span>
+            </a>
+
+            <!-- Карточка 4 -->
+            <a href="#" class="category-card">
+                <div class="card-image ram-bg"></div>
+                <span class="category-name">Оперативная память</span>
+                <span class="product-count">95 ТОВАРОВ</span>
+            </a>
+
+            <!-- Карточка 5 -->
+            <a href="#" class="category-card">
+                <div class="card-image ssd-bg"></div>
+                <span class="category-name">Накопители SSD</span>
+                <span class="product-count">110 ТОВАРОВ</span>
+            </a>
+
+            <!-- Карточка 6 -->
+            <a href="#" class="category-card">
+                <div class="card-image psu-bg"></div>
+                <span class="category-name">Блоки питания</span>
+                <span class="product-count">64 ТОВАРА</span>
+            </a>
+
+            <!-- Карточка 7 -->
+            <a href="#" class="category-card">
+                <div class="card-image case-bg"></div>
+                <span class="category-name">Корпуса</span>
+                <span class="product-count">78 ТОВАРОВ</span>
+            </a>
+
+            <!-- Карточка 8 -->
+            <a href="#" class="category-card">
+                <div class="card-image cooling-bg"></div>
+                <span class="category-name">Охлаждение</span>
+                <span class="product-count">102 ТОВАРА</span>
+            </a>
+
+        </div>
+    </section>
+
+</body>
+</html>

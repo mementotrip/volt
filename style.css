@@ -1,0 +1,652 @@
+/* ==========================================================================
+   RESET & BASE STYLES
+   ========================================================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0B0D11;
+    color: #F5F7FC;
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* ==========================================================================
+   HEADER SECTION
+   ========================================================================== */
+.store-header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #0B0D11;
+}
+
+/* Announcement Bar */
+.announcement {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 64px;
+    height: 30px;
+    background: #191D26;
+}
+
+.shipping-promise {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    line-height: 13px;
+    color: #969EAF;
+}
+
+.utility-links {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.utility-link {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    line-height: 13px;
+    color: #969EAF;
+    transition: color 0.2s;
+}
+
+.utility-link:hover {
+    color: #F5F7FC;
+}
+
+/* Main Navigation */
+.main-navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 64px;
+    gap: 48px;
+    height: 76px;
+}
+
+/* Brand */
+.brand {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    height: 40px;
+}
+
+.zap-icon {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.zap-icon svg {
+    width: 20px;
+    height: 20px;
+}
+
+.wordmark {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 40px;
+    color: #F5F7FC;
+    letter-spacing: -0.5px;
+}
+
+.brand-descriptor {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 12px;
+    color: #969EAF;
+    align-self: flex-end;
+    margin-bottom: 6px;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 16px;
+    gap: 12px;
+    flex: 1;
+    height: 42px;
+    background: #12151C;
+    border: 1px solid #292E3A;
+    border-radius: 6px;
+}
+
+.search-icon, .filter-icon {
+    width: 18px;
+    height: 18px;
+}
+
+.search-input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    color: #F5F7FC;
+}
+
+.search-input::placeholder {
+    color: #969EAF;
+}
+
+.shortcut {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    color: #656F83;
+    background: #191D26;
+    padding: 2px 6px;
+    border-radius: 4px;
+    border: 1px solid #292E3A;
+}
+
+.search-divider {
+    width: 1px;
+    height: 18px;
+    background: #292E3A;
+}
+
+/* Account Actions */
+.account-actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+}
+
+.action-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    position: relative;
+}
+
+.action-btn svg {
+    width: 20px;
+    height: 20px;
+}
+
+.cart-btn {
+    width: auto;
+    gap: 6px;
+}
+
+.cart-count {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 13px;
+    color: #527BFF;
+}
+
+/* Category Navigation Bar */
+.category-navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 64px;
+    gap: 32px;
+    height: 46px;
+    border-top: 1px solid #292E3A;
+    border-bottom: 1px solid #292E3A;
+}
+
+.category-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.menu-label {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: #F5F7FC;
+}
+
+.nav-divider {
+    width: 1px;
+    height: 17px;
+    background: #292E3A;
+}
+
+.nav-link {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    color: #969EAF;
+    transition: color 0.2s;
+}
+
+.nav-link:hover {
+    color: #F5F7FC;
+}
+
+.nav-link.highlight {
+    color: #A084FF;
+    font-weight: 500;
+}
+
+.header-promise {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 7px;
+    margin-left: auto;
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    color: #969EAF;
+}
+
+/* ==========================================================================
+   HERO / FLAGSHIP LAUNCH SECTION
+   ========================================================================== */
+.hero-section {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 58px 64px;
+    height: 560px;
+    overflow: hidden;
+    background: #0E1116;
+}
+
+.hero-bg-image {
+    position: absolute;
+    width: 780px;
+    height: 560px;
+    right: 0;
+    top: 0;
+    background: radial-gradient(circle at center, #1e2638 0%, #0E1116 70%),
+                linear-gradient(135deg, #121620 0%, #080a0d 100%);
+    z-index: 0;
+}
+
+.hero-overlay {
+    position: absolute;
+    width: 1000px;
+    height: 560px;
+    left: 0;
+    top: 0;
+    background: linear-gradient(90deg, #0B0D11 0%, rgba(11, 13, 17, 0.87) 55%, rgba(11, 13, 17, 0) 100%);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    max-width: 590px;
+}
+
+.launch-label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.launch-indicator {
+    width: 6px;
+    height: 6px;
+    background: #527BFF;
+    border-radius: 50%;
+    box-shadow: 0 0 8px #527BFF;
+}
+
+.eyebrow {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: #527BFF;
+    letter-spacing: 0.5px;
+}
+
+.headline {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 104%;
+    color: #F5F7FC;
+    letter-spacing: -1px;
+}
+
+.supporting-copy {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    line-height: 170%;
+    color: #969EAF;
+    max-width: 440px;
+}
+
+.hero-actions {
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+}
+
+.btn {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 22px;
+    gap: 10px;
+    height: 48px;
+    border-radius: 6px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+.btn-primary {
+    background: #527BFF;
+    border: 1px solid #527BFF;
+    color: #F5F7FC;
+}
+
+.btn-primary:hover {
+    background: #3b63e6;
+    border-color: #3b63e6;
+}
+
+.btn-secondary {
+    background: #191D26;
+    border: 1px solid #292E3A;
+    color: #F5F7FC;
+}
+
+.btn-secondary:hover {
+    background: #222734;
+    border-color: #383f50;
+}
+
+.slide-pagination {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 9px;
+    gap: 7px;
+}
+
+.dot {
+    width: 16px;
+    height: 3px;
+    background: #292E3A;
+    border-radius: 2px;
+}
+
+.dot.active {
+    width: 30px;
+    background: #527BFF;
+}
+
+.featured-callout {
+    position: absolute;
+    right: 64px;
+    bottom: 35px;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+}
+
+.featured-callout .model {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    color: #F5F7FC;
+}
+
+.featured-callout .starting-price {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    color: #969EAF;
+}
+
+/* ==========================================================================
+   STORE ASSURANCES
+   ========================================================================== */
+.store-assurances {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 64px;
+    gap: 40px;
+    height: 98px;
+    background: #12151C;
+    border-top: 1px solid #292E3A;
+    border-bottom: 1px solid #292E3A;
+}
+
+.assurance-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    flex: 1;
+}
+
+.assurance-icon {
+    width: 25px;
+    height: 25px;
+    flex-shrink: 0;
+}
+
+.assurance-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.assurance-copy .title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    color: #F5F7FC;
+}
+
+.assurance-copy .description {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    color: #969EAF;
+}
+
+/* ==========================================================================
+   SHOP BY COMPONENT (CATEGORY GRID)
+   ========================================================================== */
+.shop-by-component {
+    display: flex;
+    flex-direction: column;
+    padding: 58px 64px 50px;
+    gap: 28px;
+}
+
+.section-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.heading-title {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.heading-title .eyebrow {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: #527BFF;
+}
+
+.heading-title .title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 41px;
+    color: #F5F7FC;
+}
+
+.section-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 9px;
+}
+
+.section-link .label {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    color: #969EAF;
+    transition: color 0.2s;
+}
+
+.section-link:hover .label {
+    color: #F5F7FC;
+}
+
+/* Category Grid */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 12px;
+    width: 100%;
+}
+
+.category-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 18px;
+    gap: 4px;
+    background: #12151C;
+    border: 1px solid #292E3A;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+}
+
+.category-card:hover {
+    border-color: #527BFF;
+    transform: translateY(-2px);
+}
+
+.category-card.active {
+    border-color: #527BFF;
+    background: #141822;
+}
+
+.card-image {
+    width: 100%;
+    height: 112px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 9px 9px 0 0;
+    margin-bottom: 4px;
+}
+
+/* Градиенты-заглушки для категорий */
+.cpu-bg {
+    background: radial-gradient(circle at center, #232d3d 0%, #12151C 80%);
+}
+
+.gpu-bg {
+    background: radial-gradient(circle at center, #1b2f52 0%, #12151C 80%);
+}
+
+.mobo-bg {
+    background: radial-gradient(circle at center, #262933 0%, #12151C 80%);
+}
+
+.ram-bg {
+    background: radial-gradient(circle at center, #312142 0%, #12151C 80%);
+}
+
+.ssd-bg {
+    background: radial-gradient(circle at center, #3a1f25 0%, #12151C 80%);
+}
+
+.psu-bg {
+    background: radial-gradient(circle at center, #282b30 0%, #12151C 80%);
+}
+
+.case-bg {
+    background: radial-gradient(circle at center, #1d232a 0%, #12151C 80%);
+}
+
+.cooling-bg {
+    background: radial-gradient(circle at center, #1a3338 0%, #12151C 80%);
+}
+
+.category-name {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #F5F7FC;
+    text-align: center;
+}
+
+.product-count {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 9px;
+    line-height: 12px;
+    color: #656F83;
+    text-align: center;
+}
+
+/* ==========================================================================
+   RESPONSIVE LAYOUT
+   ========================================================================== */
+@media (max-width: 1200px) {
+    .category-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .announcement, .main-navigation, .category-navigation, .hero-section, .store-assurances, .shop-by-component {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .store-assurances {
+        flex-direction: column;
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
